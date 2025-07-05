@@ -71,7 +71,12 @@ function ServiceCard({ icon, title, description, link }) {
         <button onClick={() => router.push(link)} className={styles.learnMore}>
           Explore{" "}
           <span className={styles.arrow}>
-            <Image src={arrowIcon} alt="arrow icon" width={20}></Image>
+            <Image
+              src={arrowIcon}
+              alt="arrow icon"
+              width={20}
+              height={20}
+            ></Image>
           </span>
         </button>
       </div>
