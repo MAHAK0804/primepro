@@ -1,0 +1,27 @@
+.bg{
+    background-color: #333333;
+    padding: 80px 0 0 0;
+    color: #fff;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.text h1{
+    font-size: 50px;
+}
+.text .para{
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+.text p{
+    font-size: 14px;
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+    padding-bottom: 15px;
+}
+.text p span{
+    color: #A4EC18;
+}

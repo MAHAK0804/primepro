@@ -1,0 +1,15 @@
+.getStartedButton {
+  background: #2563EB;
+  color: white;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.getStartedButton:hover {
+  background: #1D4ED8;
+} 

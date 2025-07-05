@@ -1,0 +1,408 @@
+.insights {
+    background-color: #A3E5034D;
+    padding: 2rem 0px;
+    margin: 0px 100px;
+    border-radius: 30px;
+}
+
+.common_p {
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+}
+
+.common_r_p {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    color: #000;
+    padding: 3rem 2rem;
+}
+
+.headerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.logoWrapper {
+    flex-shrink: 0;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.headerText {
+    flex: 1;
+}
+
+.badge {
+    display: inline-block;
+    background: white;
+    border: 1px solid #A5A6F6;
+    color: #252327;
+    padding: 5px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 44px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.description {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    padding-right: 351px;
+    font-weight: 400;
+}
+
+.getStartedButton {
+    background: linear-gradient(to right, #2179FF, #0552C7);
+    padding: 10px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.getStartedButton:hover {
+    background-color: #1D4ED8;
+}
+
+.insightsSection {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    background-color: white;
+    /* padding: 30px 0px; */
+    border-radius: 30px;
+}
+
+.insightsTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 2rem;
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.sliderContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sliderArrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    color: #1a1a1a;
+    transition: color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.sliderArrow:hover {
+    color: #2563EB;
+}
+
+.sliderArrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.insightCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.cardLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.image {
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .image {
+    transform: scale(1.05);
+}
+
+.cardContent {
+    padding: 7px;
+    height: 175px;
+}
+
+.category {
+    color: #4b5563;
+    background-color: #f3f4f6;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+    padding: 4px 8px;
+    font-size: 10px;
+    display: inline-block;
+}
+
+.cardTitle {
+    font-size: 12px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.cardMeta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.authorName {
+    font-size: 10px;
+    font-weight: 500;
+    color: #111827;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6B7280;
+    font-size: 10px;
+}
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .description {
+        font-size: 1.125rem;
+        padding-right: 0;
+    }
+
+    .insightCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .insights {
+        padding: 3rem 1.5rem;
+    }
+
+    .common_r_p {
+        padding: 0 50px;
+        margin: 0;
+    }
+    .cardImage{
+        height: 270px;
+    }
+    .cardTitle{
+        font-size: 17px;
+    }
+
+    .insights {
+        background-color: #A3E5034D;
+        padding: 2rem 0px;
+        margin: 0px 10px;
+        border-radius: 30px;
+    }
+
+    .header {
+        padding: 3rem 1.5rem;
+    }
+
+    .description {
+        padding-right: 0;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .headerContent {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .insightCards {
+        grid-template-columns: 1fr;
+    }
+
+    .sliderContainer {
+        gap: 1rem;
+    }
+    .category{
+        font-size: 13px;
+        margin-top: 12px;
+    }
+    .authorName{
+        font-size: 13px;
+    }
+    .meta{
+        font-size: 13px;
+    }
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.blogGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.blogCard {
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.blogCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.imageWrapper {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blogImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.blogCard:hover .blogImage {
+    transform: scale(1.05);
+}
+
+.blogContent {
+    padding: 1.5rem;
+}
+
+.blogTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.blogMeta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+}
+
+.dot {
+    color: #D1D5DB;
+}
+
+.viewMore {
+    text-align: center;
+}
+
+.viewMoreButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #2563EB;
+    font-weight: 500;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1.125rem;
+}
+
+.arrow {
+    transition: transform 0.2s;
+}
+
+.viewMoreButton:hover .arrow {
+    transform: translateX(4px);
+}
+
+/* @media (max-width: 768px) {
+
+    .insights {
+        background-color: #A3E5034D;
+        padding: 2rem 0px;
+        margin: 0px 5px;
+        border-radius: 30px;
+    }
+
+    .insights {
+        padding: 4rem 1.5rem;
+    }
+
+    .description {
+        padding-right: 0;
+    }
+
+    .sectionTitle {
+        font-size: 2rem;
+    }
+
+    .blogGrid {
+        grid-template-columns: 1fr;
+    }
+} */

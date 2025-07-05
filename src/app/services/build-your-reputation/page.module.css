@@ -1,0 +1,256 @@
+.spaceBetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ctaSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.auditBox {
+  background: linear-gradient(to right, #2179FF, #0552C7);
+  padding: 10px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: background-color 0.2s;
+}
+
+.auditBox:hover {
+  background-color: #1D4ED8;
+}
+
+.auditBox:focus {
+  outline: 2px solid #4475F2;
+  outline-offset: 2px;
+}
+
+.auditText {
+  color: #F8F8F8;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-body);
+}
+
+.trustInfo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.avatarGroup {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid #000;
+  overflow: hidden;
+  margin-left: -0.75rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.trustText {
+  display: flex;
+  flex-direction: column;
+  color: #6B7280;
+  font-size: 0.875rem;
+}
+
+.trustCount {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+/* 
+.globe {
+  width: 100%;
+  height: auto;
+} */
+ .buildImg{
+  width: 457px;
+  height: 457px;
+ }
+
+.label {
+  position: absolute;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 0.875rem;
+  white-space: nowrap;
+  animation-name: float;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Positions + different timing per label for uneven movement */
+.label1 {
+  top: 25%;
+  left: -15%;
+  animation-duration: 4s;
+  animation-delay: 0s;
+}
+
+.label2 {
+  top: 60%;
+  left: -8%;
+  animation-duration: 3.8s;
+  animation-delay: 0.7s;
+}
+
+.label3 {
+  top: 10%;
+  right: -7%;
+  animation-duration: 4.3s;
+  animation-delay: 0.3s;
+}
+
+.label4 {
+  top: 40%;
+  right: -7%;
+  animation-duration: 4.5s;
+  animation-delay: 0.9s;
+}
+
+.label5 {
+  top: 62%;
+  right: -18%;
+  animation-duration: 3.5s;
+  animation-delay: 0.2s;
+}
+
+.label6 {
+  bottom: -2%;
+  right: 6%;
+  animation-duration: 4.7s;
+  animation-delay: 1s;
+}
+
+@media screen and (max-width:798px) {
+  .label1 {
+    top: 25%;
+    left: 0%;
+    animation-duration: 4s;
+    animation-delay: 0s;
+  }
+
+  .label2 {
+    top: 50%;
+    left: 2%;
+    animation-duration: 3.8s;
+    animation-delay: 0.7s;
+  }
+
+  .label3 {
+    top: 10%;
+    right: 0%;
+    animation-duration: 4.3s;
+    animation-delay: 0.3s;
+  }
+
+  .label4 {
+    top: 40%;
+    right: 0%;
+    animation-duration: 4.5s;
+    animation-delay: 0.9s;
+  }
+
+  .label5 {
+    top: 65%;
+    right: 7%;
+    animation-duration: 3.5s;
+    animation-delay: 0.2s;
+  }
+
+  .label6 {
+    bottom: 3%;
+    right: 15%;
+    animation-duration: 4.7s;
+    animation-delay: 1s;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .label1 {
+    top: 25%;
+    left: 0%;
+    animation-duration: 4s;
+    animation-delay: 0s;
+  }
+
+  .label2 {
+    top: 50%;
+    left: 2%;
+    animation-duration: 3.8s;
+    animation-delay: 0.7s;
+  }
+
+  .label3 {
+    top: 10%;
+    right: 0%;
+    animation-duration: 4.3s;
+    animation-delay: 0.3s;
+  }
+
+  .label4 {
+    top: 40%;
+    right: 0%;
+    animation-duration: 4.5s;
+    animation-delay: 0.9s;
+  }
+
+  .label5 {
+    top: 65%;
+    right: 7%;
+    animation-duration: 3.5s;
+    animation-delay: 0.2s;
+  }
+
+  .label6 {
+    bottom: 3%;
+    right: 15%;
+    animation-duration: 4.7s;
+    animation-delay: 1s;
+  }
+}

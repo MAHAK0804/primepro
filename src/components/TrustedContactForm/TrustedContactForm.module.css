@@ -1,0 +1,65 @@
+.formBg{
+    background: #fff;
+    padding: 18px 0;
+    border-radius: 10px;
+    max-width: 457px;
+}
+.formBg h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #333333;
+    border-bottom: 3px solid #D9D9D9;
+    padding: 10px 38px;
+}
+.label{
+    font-size: 14px;
+    color: #333333;
+    font-weight: 500;
+}
+.input{
+    font-size: 14px;
+    border: 1px solid #BBBDBB;
+    border-radius: 5px;
+    padding: 9px;
+    width: 100%;
+    color: #000000;
+}
+.input::placeholder{
+    color: #A2A1A3;
+}
+.requiredText{
+    color: red;
+    font-size: 10px;
+     min-height: 15px;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 38px;
+}
+.helptext{
+    font-size: 12px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1;
+}
+.sendMessageButton{
+    background: #333333;
+    font-size: 12px;
+    color: #F8F8F8;
+    padding: 9px 35px;
+    border-radius: 4px;
+}
+.phoneInputContainer .react-tel-input .form-control {
+  width: 100% !important;
+}
+
+.phoneInputContainer .form-control {
+  width: 100% !important;
+  height: 44px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  padding-left: 50px !important;
+  font-size: 16px;
+}

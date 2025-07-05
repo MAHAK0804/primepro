@@ -1,0 +1,66 @@
+.bg{
+    background-color: #A3E5034D;
+    padding: 25px 0;
+     position: relative;
+     overflow: hidden;
+  white-space: nowrap;
+}
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    animation: scrollLeft 15s linear infinite; 
+    width: fit-content;
+}
+
+
+.marqueeContent {
+  display: flex;
+  gap: 6rem;
+  width: 100%;
+  animation: bounceMarquee 8s ease-in-out infinite alternate;
+}
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  font-family: var(--font-body);
+  flex-direction: row;
+  /* white-space: nowrap; */
+}
+
+.featureIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background-color: #000;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.7rem;
+}
+
+/* marquee animation */
+/* @keyframes scrollMarquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} */
+@keyframes bounceMarquee {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,110 @@
+.formContainer {
+  padding: 1rem;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 900;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #6B7280;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.formBottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 500;
+  color: #111827;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 0.75rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.formGroup textarea {
+  resize: none;
+  height: 42px;
+  min-height: unset;
+  overflow-y: hidden;
+  line-height: 1.5;
+}
+
+.privacy {
+  color: #6B7280;
+  font-size: 0.875rem;
+}
+
+.privacy a {
+  color: #2563EB;
+  text-decoration: underline;
+}
+
+.submitButton {
+  background: #111827;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: fit-content;
+  align-self: center;
+  transition: background-color 0.2s;
+}
+
+.submitButton:hover {
+  background: #000;
+}
+
+@media (max-width: 640px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 900;
+    color: #111827;
+    margin-bottom: 1rem;
+  }
+
+  .formBottom {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    margin-top: -0.5rem;
+  }
+} 

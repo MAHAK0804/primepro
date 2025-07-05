@@ -1,0 +1,93 @@
+.contact {
+  padding: 4rem 2rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  background: #F5F5F5;
+  border-radius: 1.5rem;
+}
+
+.contactTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.contactSubtitle {
+  color: #6B7280;
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.contactCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.iconBox {
+  width: 3rem;
+  height: 3rem;
+  background: #F3F4F6;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111827;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.cardDescription {
+  color: #6B7280;
+}
+
+.cardLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4475F2;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.arrow {
+  transition: transform 0.2s;
+}
+
+.cardLink:hover .arrow {
+  transform: translateX(4px);
+}
+
+@media (max-width: 1024px) {
+  .contactGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .contactTitle {
+    font-size: 2.5rem;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+} 

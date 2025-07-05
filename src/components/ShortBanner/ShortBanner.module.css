@@ -1,0 +1,83 @@
+.shortBannerBg{
+    /* background: #333333; */
+    /* color: #fff; */
+    padding: 50px 0;
+}
+.text{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+}
+.text h1{
+    font-size: 24px;
+    font-family: var(--font-body);
+    font-weight: 700;
+}
+.text p{
+    font-size: 14px;
+    font-family: var(--font-body);
+    font-weight: 500;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.avatarGroup {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid #000;
+  overflow: hidden;
+  margin-left: -0.75rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar:first-child {
+  margin-left: 0;
+}
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.auditBox {
+  background: linear-gradient(to right, #2179FF, #0552C7);
+  padding:9px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 400;
+  transition: background-color 0.2s;
+}
+
+.auditBox:hover {
+  background-color: #1D4ED8;
+}
+
+.auditBox:focus {
+  outline: 2px solid #4475F2;
+  outline-offset: 2px;
+}
+
+.auditText {
+  color: #F8F8F8;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--font-body);
+}
+.spaceCenter{
+  display: flex;
+  justify-content: center;
+}

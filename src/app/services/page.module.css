@@ -1,0 +1,651 @@
+.main {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.grayWrapper {
+  background: #F6F7F9;
+  padding: 2rem 0;
+}
+
+.hero {
+  position: relative;
+  min-height: 600px;
+  padding: 4rem 2rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('/services_hero.gif');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 24px;
+  margin: 0 2rem;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.badge {
+  background-color: white;
+  color: #111827;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.consultationButton {
+  background-color: #2563EB;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: fit-content;
+}
+
+.consultationButton:hover {
+  background-color: #1D4ED8;
+}
+
+.services {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.category {
+  margin-bottom: 4rem;
+}
+
+.categoryTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 2rem;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.serviceCard {
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  margin-bottom: 4px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.iconWrapper {
+  width: 3rem;
+  height: 3rem;
+  background: #F3F4F6;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.serviceTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.serviceDescription {
+  color: #6B7280;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 500px;
+    margin: 1rem;
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .subtitle br {
+    display: none;
+  }
+
+  .consultationButton {
+    padding: 0.875rem 1.75rem;
+    font-size: 1rem;
+  }
+
+  .services {
+    padding: 4rem 1.5rem;
+  }
+
+  .serviceGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.removal {
+  padding: 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.removalTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.removalGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+  row-gap: 2rem;
+  padding: 2rem;
+  background-color: #F2F7FF;
+  border-radius: 1.5rem;
+}
+
+.removalItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.removalItem:hover {
+  transform: translateY(-2px);
+}
+
+.removalImage {
+  width: 100%;
+  height: 40px;
+  object-fit: contain;
+}
+
+.removalText {
+  font-size: 0.875rem;
+  color: #4B5563;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.stats {
+  /* padding: 6rem 2rem;
+  background-color: #F9FAFB; */
+  margin: 2rem 0;
+}
+
+.statsTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.statsGrid {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.statLabel {
+  color: #4B5563;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkIcon {
+  color: #2563EB;
+  font-size: 1.25rem;
+}
+
+.statValue {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1;
+}
+
+.talkToExpert {
+  background: linear-gradient(90deg, #E7F0FF 0%, #F4F9FF 100%);
+  padding: 2.5rem;
+  margin: 4rem 15rem;
+  border-radius: 1.5rem;
+}
+
+.expertContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.expertInfo {
+  flex: 1;
+}
+
+.expertTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.expertText {
+  color: #6B7280;
+  font-size: 1.125rem;
+}
+
+.expertAvatars {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-left: -0.75rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.bookButton {
+  background: #2563EB;
+  color: white;
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.bookButton:hover {
+  background: #1D4ED8;
+}
+
+@media (max-width: 1024px) {
+  .removalGrid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
+  .statsGrid {
+    gap: 4rem;
+  }
+
+  .expertContent {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .expertAvatars {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .removal {
+    padding: 4rem 1.5rem;
+  }
+
+  .removalGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .removalTitle {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .stats {
+    padding: 4rem 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .statsTitle {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .statsGrid {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .statValue {
+    font-size: 3rem;
+  }
+
+  .talkToExpert {
+    margin: 2rem 1rem;
+    padding: 2rem 1.5rem;
+  }
+}
+
+.testimonials {
+  padding: 2rem 2rem;
+  margin: 2rem 0;
+  background-color: white;
+}
+
+.testimonialsTitle {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonialCard {
+  background: linear-gradient(90deg, #E7F0FF 0%, #F4F9FF 100%);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.testimonialHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonialImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonialInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.testimonialName {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.testimonialRole {
+  font-size: 0.875rem;
+  color: #6B7280;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+.star {
+  font-size: 1rem;
+  color: #E5E7EB;
+}
+
+.star.filled {
+  color: #FDB241;
+}
+
+.star.halfFilled {
+  background: linear-gradient(90deg, #FDB241 50%, #E5E7EB 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ratingNumber {
+  color: #6B7280;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+}
+
+.testimonialQuote {
+  color: #4B5563;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .testimonialGrid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 4rem 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .testimonialsTitle {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .testimonialGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.standFor {
+  padding: 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.standForContent {
+  flex: 1;
+  max-width: 500px;
+}
+
+.standForBadge {
+  background-color: #EEF2FF;
+  color: #4F46E5;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.standForTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.standForDescription {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #6B7280;
+  margin-bottom: 2rem;
+}
+
+.standForGrid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.standForCard {
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.standForCardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.standForCardDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4B5563;
+}
+
+@media (max-width: 1024px) {
+  .standFor {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .standForContent {
+    max-width: 100%;
+  }
+
+  .standForTitle {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .standFor {
+    padding: 4rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .standForTitle {
+    font-size: 2.5rem;
+  }
+
+  .standForDescription {
+    font-size: 1rem;
+  }
+}
+
+.contactFormSection {
+  padding: 0 2rem 0rem;
+}
+
+.contactFormWrapper {
+  max-width: 1064px;
+  margin: 50px auto;
+  background: #F5F7FF;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .contactFormSection {
+    padding: 0 1rem 3rem;
+  }
+}
+
+.faqSection {
+  padding: 0 2rem 4rem;
+}
+
+@media (max-width: 768px) {
+  .faqSection {
+    padding: 0 1rem 3rem;
+  }
+}

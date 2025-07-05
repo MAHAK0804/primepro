@@ -1,0 +1,78 @@
+.common_tag {
+  font-size: 16px;
+  color: #333;
+  background: #A3E5034D;
+  border: none;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 6px;
+}
+
+.common_section_tag {
+  color: #2179FF;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.bgAlt1 {
+  background: #A3E50326;
+  padding: 61px 91px;
+  border-radius: 15px;
+}
+
+.bgAlt2 {
+  background: #D5E5FF4D;
+  padding: 61px 91px;
+  border-radius: 15px;
+}
+
+.bgAlt3 {
+  background: #DADBD833;
+  padding: 61px 91px;
+  border-radius: 15px;
+}
+
+.common_card {
+  background: #fff;
+  padding: 32px 30px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  box-shadow: 0 4px 13px 0 #0000001A;
+  margin-bottom: 14px;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.line {
+  width: 270px;
+  height: 1px;
+  background: #333333;
+}
+
+.space_btw {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width:576px) {
+  .bgAlt1 {
+    padding: 20px;
+  }
+
+  .bgAlt2 {
+    padding: 20px;
+  }
+
+  .bgAlt3 {
+    padding: 20px;
+  }
+
+  .space_btw {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+}

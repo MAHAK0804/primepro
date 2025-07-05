@@ -1,0 +1,109 @@
+.removal {
+  padding: 100px 0 50px 0; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.removalTitle {
+  font-size: 32px;
+  font-weight: 600;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.removalGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1.5rem;
+  row-gap: 2rem;
+  padding: 2rem;
+  background-color: #F2F7FF;
+  border-radius: 1.5rem;
+}
+
+.removalItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.removalItem:hover {
+  transform: translateY(-2px);
+}
+
+.removalImage {
+  width: 100%;
+  height: 40px;
+  object-fit: contain;
+}
+
+.removalText {
+  font-size: 0.875rem;
+  color: #4B5563;
+  text-align: center;
+  line-height: 1.4;
+}
+
+
+@media (max-width: 1024px) {
+  .removalGrid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
+  .statsGrid {
+    gap: 4rem;
+  }
+
+  .expertContent {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .expertAvatars {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .removal {
+    padding: 4rem 1.5rem;
+  }
+
+  .removalGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .removalTitle {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .stats {
+    padding: 4rem 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .statsTitle {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .statsGrid {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .statValue {
+    font-size: 3rem;
+  }
+}
