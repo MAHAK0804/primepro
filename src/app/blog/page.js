@@ -80,7 +80,7 @@ export default function Blog() {
                     <Image
                       src={blog.image}
                       alt={blog.title}
-                      fill
+                      layout="fill"
                       className={styles.image}
                       sizes="(max-width: 768px) 100vw, 400px"
                       priority={index < 2} // Prioritize loading for first 2 blogs

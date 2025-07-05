@@ -150,7 +150,7 @@ export default function BlogsPage() {
                   <Image
                     src={blog.image}
                     alt={blog.title}
-                    fill
+                    layout="fill"
                     className={styles.cardImg}
                   />
                 </div>

@@ -242,7 +242,7 @@ export default function BlogPage({ params }) {
                   <Image
                     src={otherBlog.image}
                     alt={otherBlog.title}
-                    fill
+                    layout="fill"
                     className={styles.cardImg}
                   />
                 </div>
